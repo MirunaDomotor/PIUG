@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <!-- Basic Page Needs
@@ -34,245 +35,294 @@
   <link rel="stylesheet" href="css/style.css">
 
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D9Y3XT255J"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D9Y3XT255J"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-D9Y3XT255J');
-</script>
+    gtag('config', 'G-D9Y3XT255J');
+  </script>
 
 </head>
+
 <body>
   <div class="body-inner">
 
     <div id="top-bar" class="top-bar">
-        <div class="container">
-          <div class="row">
-              <div class="col-lg-8 col-md-8">
-                <ul class="top-info text-center text-md-left">
-                  <li><i class="fas fa-map-marker-alt"></i> <p class="info-text">HappyHammy, Timisoara, Romania</p>
-                    </li>
-                </ul>
-              </div>
-              <!--/ Top info end -->
-  
-              <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
-                <ul class="list-unstyled">
-                    <li>
-                      <a title="Facebook" href="https://facebbok.com/themefisher.com">
-                          <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
-                      </a>
-                      <a title="Twitter" href="https://twitter.com/themefisher.com">
-                          <span class="social-icon"><i class="fab fa-twitter"></i></span>
-                      </a>
-                      <a title="Instagram" href="https://instagram.com/themefisher.com">
-                          <span class="social-icon"><i class="fab fa-instagram"></i></span>
-                      </a>
-                      <a title="Linkdin" href="https://github.com/themefisher.com">
-                          <span class="social-icon"><i class="fab fa-github"></i></span>
-                      </a>
-                      <button id="modeToggle">Light/Dark Mode</button>
-                    </li>
-                </ul>
-              </div>
-              <!--/ Top social end -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-8">
+            <ul class="top-info text-center text-md-left">
+              <li><i class="fas fa-map-marker-alt"></i>
+                <p class="info-text">HappyHammy, Timisoara, Romania</p>
+              </li>
+            </ul>
           </div>
-          <!--/ Content row end -->
+          <!--/ Top info end -->
+
+          <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
+            <ul class="list-unstyled">
+              <li>
+                <a title="Facebook" href="https://facebbok.com/themefisher.com">
+                  <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+                </a>
+                <a title="Twitter" href="https://twitter.com/themefisher.com">
+                  <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                </a>
+                <a title="Instagram" href="https://instagram.com/themefisher.com">
+                  <span class="social-icon"><i class="fab fa-instagram"></i></span>
+                </a>
+                <a title="Linkdin" href="https://github.com/themefisher.com">
+                  <span class="social-icon"><i class="fab fa-github"></i></span>
+                </a>
+                <button id="modeToggle" style="margin-left: 35px;">Light/Dark Mode</button>
+              </li>
+            </ul>
+          </div>
+          <!--/ Top social end -->
         </div>
-        <!--/ Container end -->
+        <!--/ Content row end -->
+      </div>
+      <!--/ Container end -->
     </div>
     <!--/ Topbar end -->
-<!-- Header start -->
-<header id="header" class="header-one">
-  <div class="bg-white">
-    <div class="container">
-      <div class="logo-area">
-          <div class="row align-items-center">
-            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+    <!-- Header start -->
+    <header id="header" class="header-one">
+      <div class="bg-white">
+        <div class="container">
+          <div class="logo-area">
+            <div class="row align-items-center">
+              <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
                 <a class="d-block" href="index.html">
                   <img loading="lazy" src="images/logoName.png" alt="HappyHammy">
                 </a>
-            </div><!-- logo end -->
-  
-            <div class="col-lg-9 header-right">
+              </div><!-- logo end -->
+
+              <div class="col-lg-9 header-right">
                 <ul class="top-info-box">
                   <li>
                     <div class="info-box">
                       <div class="info-box-content">
-                          <p class="info-box-title">Call Us</p>
-                          <p class="info-box-subtitle">(+40)-739-881-122</p>
+                        <p class="info-box-title">Call Us</p>
+                        <p class="info-box-subtitle">(+40)-739-881-122</p>
                       </div>
                     </div>
                   </li>
                   <li>
                     <div class="info-box">
                       <div class="info-box-content">
-                          <p class="info-box-title">Email Us</p>
-                          <p class="info-box-subtitle">office@HappyHammy.com</p>
+                        <p class="info-box-title">Email Us</p>
+                        <p class="info-box-subtitle">office@HappyHammy.com</p>
                       </div>
                     </div>
                   </li>
-                
+
                   <li class="header-get-a-quote">
-                    <a class="btn btn-primary" href="contact.html">Get A Quote</a>
+                    <a class="btn btn-primary" href="#" id="helpButton">HELP</a>
+
+                    <!-- Overlay si caseta pop-up -->
+                    <div class="overlay">
+                      <div class="popup">
+                        <p>Hover over "Behaviour" to open a dropdown menu.
+                          Explore subcategories related to hamster behavior. Click on the desired subcategory to find
+                          detailed information.<br>
+                          Click on "Care" to access a dedicated page with comprehensive information about hamster care.
+                          Explore topics such as housing, cleaning, and playtime.<br>
+                          Click on "Health" to navigate to a dedicated page containing valuable information about
+                          hamster health. Explore topics such as common illnesses and veterinary care.<br>
+                          Click on "Diet" to access a dedicated page with detailed information about hamster diet.
+                          Explore feeding schedules, types of food, and nutritional guidelines.<br>
+                          Click on "Contact" to go to a dedicated page where users can find information on how to get in
+                          touch with you or your team.</p>
+                        <button class="close">close</button>
+                      </div>
+                    </div>
                   </li>
                 </ul><!-- Ul end -->
-            </div><!-- header right end -->
-          </div><!-- logo area end -->
-  
-      </div><!-- Row end -->
-    </div><!-- Container end -->
-  </div>
+              </div><!-- header right end -->
+            </div><!-- logo area end -->
 
-  <div class="site-navigation">
-    <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
+            <div id="back-to-bottom" data-spy="affix" data-offset-bottom="10" class="back-to-bottom position-fixed">
+              <button class="btn btn-primary" title="Back to Bottom">
+                <i class="fa fa-angle-double-down"></i>
+              </button>
+            </div>
+
+          </div><!-- Row end -->
+        </div><!-- Container end -->
+      </div>
+
+      <div class="site-navigation">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
               <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+                  aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
                 </button>
-                
-                <div id="navbar-collapse" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav mr-auto">
-                      <li class="nav-item dropdown active">
-                        <a href="index.html" class="nav-link">Home</a>
-                      </li>
 
-                      <li class="nav-item dropdown">
-                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Behaviour <i class="fa fa-angle-down"></i></a>
-                          <ul class="dropdown-menu" role="menu">
-                            <li><a href="syrian.html">Syrian Hamster</a></li>
-                            <li><a href="russian.html">Russian Dwarf Hamster</a></li>
-                            <li><a href="winter.html">Winter White Hamster</a></li>
-                            <li><a href="chinese.html">Chinese Hamster</a></li>
-                            <li><a href="robo.html">Roborovski Hamster</a></li>
-                          </ul>
-                      </li>
-              
-                      <li class="nav-item dropdown">
-                          <a class="nav-link" href="care.html">Care</a>
-                      </li>
-              
-                      <li class="nav-item dropdown">
-                          <a class="nav-link" href="health.html">Health</a>
-                      </li>
-              
-                      <li class="nav-item dropdown">
-                          <a class="nav-link" href="diet.html">Diet</a>
-                      </li>
-              
-                      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    </ul>
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item dropdown active">
+                      <a href="index.html" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Behaviour <i
+                          class="fa fa-angle-down"></i></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="syrian.html">Syrian Hamster</a></li>
+                        <li><a href="russian.html">Russian Dwarf Hamster</a></li>
+                        <li><a href="winter.html">Winter White Hamster</a></li>
+                        <li><a href="chinese.html">Chinese Hamster</a></li>
+                        <li><a href="robo.html">Roborovski Hamster</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="care.html">Care</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="health.html">Health</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="diet.html">Diet</a>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                  </ul>
                 </div>
               </nav>
+            </div>
+            <!--/ Col end -->
           </div>
-          <!--/ Col end -->
+          <!--/ Row end -->
+
+          <div class="nav-search">
+            <span id="search"><i class="fa fa-search"></i></span>
+          </div><!-- Search end -->
+
+          <div class="search-block" style="display: none;">
+            <label for="search-field" class="w-100 mb-0">
+              <input type="text" class="form-control" id="search-field" placeholder="Type what you want and enter">
+            </label>
+            <span class="search-close">&times;</span>
+          </div><!-- Site search end -->
         </div>
-        <!--/ Row end -->
+        <!--/ Container end -->
 
-        <div class="nav-search">
-          <span id="search"><i class="fa fa-search"></i></span>
-        </div><!-- Search end -->
-
-        <div class="search-block" style="display: none;">
-          <label for="search-field" class="w-100 mb-0">
-            <input type="text" class="form-control" id="search-field" placeholder="Type what you want and enter">
-          </label>
-          <span class="search-close">&times;</span>
-        </div><!-- Site search end -->
-    </div>
-    <!--/ Container end -->
-
-  </div>
-  <!--/ Navigation end -->
-</header>
-<!--/ Header end -->
-<div id="banner-area" class="banner-area" style="background-image:url(images/banner/banner7.jpg)">
-  <div class="banner-text">
-    <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-                <h1 class="banner-title">Roborovski Hamster</h1>
-              </div>
+      </div>
+      <!--/ Navigation end -->
+    </header>
+    <!--/ Header end -->
+    <div id="banner-area" class="banner-area" style="background-image:url(images/banner/banner7.jpg)">
+      <div class="banner-text">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 class="banner-title">Roborovski Hamster</h1>
+            </div>
           </div><!-- Col end -->
         </div><!-- Row end -->
-    </div><!-- Container end -->
-  </div><!-- Banner text end -->
-</div><!-- Banner area end --> 
+      </div><!-- Container end -->
+    </div><!-- Banner text end -->
+  </div><!-- Banner area end -->
 
-<section id="main-container" class="main-container">
-  <div class="container">
-    <div class="row">
-      Roborovski hamsters, often referred to as "Robos," are one of the smallest and most active hamster species, 
-      known for their endearing antics and distinctive behavior patterns.
+  <section id="main-container" class="main-container">
+    <div class="container">
+      <div class="row">
+        Roborovski hamsters, often referred to as "Robos," are one of the smallest and most active hamster species,
+        known for their endearing antics and distinctive behavior patterns.
 
-<h2>Social Behavior:</h2>
-<p>Roborovski hamsters are unique in their social preferences compared to other hamster species. They tend to be more 
-  sociable and can cohabitate in small groups or pairs, but it's essential to monitor them for any signs of aggression 
-  or territorial behavior. A well-structured habitat and close observation are crucial when considering social housing.</p>
+        <h2>Social Behavior:</h2>
+        <p>Roborovski hamsters are unique in their social preferences compared to other hamster species. They tend to be
+          more
+          sociable and can cohabitate in small groups or pairs, but it's essential to monitor them for any signs of
+          aggression
+          or territorial behavior. A well-structured habitat and close observation are crucial when considering social
+          housing.</p>
 
-<h2>Nocturnal Lifestyle:</h2>
-<p>Similar to other hamster species, Roborovski hamsters are nocturnal creatures. They are most active during the night, engaging in activities
-   like exploring, foraging for food, and running on their exercise wheels. During the day, they prefer to rest and remain hidden in their burrows.</p>
+        <h2>Nocturnal Lifestyle:</h2>
+        <p>Similar to other hamster species, Roborovski hamsters are nocturnal creatures. They are most active during
+          the night, engaging in activities
+          like exploring, foraging for food, and running on their exercise wheels. During the day, they prefer to rest
+          and remain hidden in their burrows.</p>
 
-<h2>Burrowing and Nesting:</h2>
-<p>Roborovski hamsters have a strong affinity for burrowing and tunneling. They excel at creating intricate underground networks in their 
-  habitats, often with multiple entrances and chambers. Providing ample bedding material, such as aspen shavings or sand, allows them to 
-  indulge in their natural burrowing instincts.</p>
+        <h2>Burrowing and Nesting:</h2>
+        <p>Roborovski hamsters have a strong affinity for burrowing and tunneling. They excel at creating intricate
+          underground networks in their
+          habitats, often with multiple entrances and chambers. Providing ample bedding material, such as aspen shavings
+          or sand, allows them to
+          indulge in their natural burrowing instincts.</p>
 
-<h2>High Energy Levels:</h2>
-<p>Robos are known for their boundless energy and agility. They are excellent climbers and can navigate various obstacles in
-   their habitat with ease. To keep them mentally and physically stimulated, provide toys, tunnels, and platforms for exploration and exercise.</p>
+        <h2>High Energy Levels:</h2>
+        <p>Robos are known for their boundless energy and agility. They are excellent climbers and can navigate various
+          obstacles in
+          their habitat with ease. To keep them mentally and physically stimulated, provide toys, tunnels, and platforms
+          for exploration and exercise.</p>
 
-<h2>Food Hoarding:</h2>
-<p>Roborovski hamsters, like their hamster cousins, are avid food hoarders. They have a tendency to stuff their cheek pouches with food
-   and then transport it to their burrows for storage. This behavior stems from their natural survival instinct in the wild, where a hidden
-    food stash can be a lifesaver during lean times.</p>
+        <h2>Food Hoarding:</h2>
+        <p>Roborovski hamsters, like their hamster cousins, are avid food hoarders. They have a tendency to stuff their
+          cheek pouches with food
+          and then transport it to their burrows for storage. This behavior stems from their natural survival instinct
+          in the wild, where a hidden
+          food stash can be a lifesaver during lean times.</p>
 
-<h2>Grooming:</h2>
-<p>Roborovski hamsters are meticulous groomers. They spend a significant amount of time cleaning themselves to keep their fur in prime condition. 
-  Their fastidious grooming rituals help in maintaining hygiene and preventing skin-related issues.</p>
+        <h2>Grooming:</h2>
+        <p>Roborovski hamsters are meticulous groomers. They spend a significant amount of time cleaning themselves to
+          keep their fur in prime condition.
+          Their fastidious grooming rituals help in maintaining hygiene and preventing skin-related issues.</p>
 
-<h2>Communication and Vocalization:</h2>
-<p>They communicate through a combination of vocalizations and body language. They may emit soft squeaks, clicks, or purring sounds, 
-  which can express various emotions or signals. Paying attention to their vocalizations and behavior can help you understand their needs and mood.</p>
+        <h2>Communication and Vocalization:</h2>
+        <p>They communicate through a combination of vocalizations and body language. They may emit soft squeaks,
+          clicks, or purring sounds,
+          which can express various emotions or signals. Paying attention to their vocalizations and behavior can help
+          you understand their needs and mood.</p>
 
-<h2>Handling and Taming:</h2>
-<p>Roborovski hamsters can be tamed with patience and gentle handling. While they may be more social compared to other hamster species, 
-  individual temperament varies. Start by allowing them to get used to your presence and gradually introduce handling. Offering treats 
-  can help build trust and positive associations.</p>
+        <h2>Handling and Taming:</h2>
+        <p>Roborovski hamsters can be tamed with patience and gentle handling. While they may be more social compared to
+          other hamster species,
+          individual temperament varies. Start by allowing them to get used to your presence and gradually introduce
+          handling. Offering treats
+          can help build trust and positive associations.</p>
 
-<h2>Health and Stress:</h2>
-<p>Monitoring your Roborovski hamster's behavior is essential to detect any signs of stress or health issues. Unusual changes in activity, appetite,
-   or grooming habits may be indicative of underlying problems. Regular check-ups with a veterinarian experienced in small animal care are crucial
-  for their well-being.</p>
+        <h2>Health and Stress:</h2>
+        <p>Monitoring your Roborovski hamster's behavior is essential to detect any signs of stress or health issues.
+          Unusual changes in activity, appetite,
+          or grooming habits may be indicative of underlying problems. Regular check-ups with a veterinarian experienced
+          in small animal care are crucial
+          for their well-being.</p>
 
-<p>In conclusion, Roborovski hamsters are remarkable little creatures with unique behaviors that make them delightful pets. Understanding and respecting
-   their natural instincts and social preferences is key to providing a happy and healthy life for your tiny companion. By observing and appreciating their
-   individual quirks and traits, you can form a deeper bond with your Roborovski hamster and ensure they thrive under your care.</p>
+        <p>In conclusion, Roborovski hamsters are remarkable little creatures with unique behaviors that make them
+          delightful pets. Understanding and respecting
+          their natural instincts and social preferences is key to providing a happy and healthy life for your tiny
+          companion. By observing and appreciating their
+          individual quirks and traits, you can form a deeper bond with your Roborovski hamster and ensure they thrive
+          under your care.</p>
 
         <div class="col-lg-6 mt-5 mt-lg-0 offset-lg-3">
-          
+
           <div id="page-slider" class="page-slider small-bg">
-              <div class="item" style="background-image:url(images/slider-pages/slide-page4.jpg)">
-              </div><!-- Item 1 end -->
+            <div class="item" style="background-image:url(images/slider-pages/slide-page4.jpg)">
+            </div><!-- Item 1 end -->
 
-              <div class="item" style="background-image:url(images/slider-pages/slide-page5.png)">
-              </div><!-- Item 1 end -->
+            <div class="item" style="background-image:url(images/slider-pages/slide-page5.png)">
+            </div><!-- Item 1 end -->
 
-              <div class="item" style="background-image:url(images/slider-pages/slide-page6.jpg)">
-              </div><!-- Item 1 end -->
-          </div><!-- Page slider end-->          
-        
+            <div class="item" style="background-image:url(images/slider-pages/slide-page6.jpg)">
+            </div><!-- Item 1 end -->
+          </div><!-- Page slider end-->
+
 
         </div><!-- Col end -->
-    </div><!-- Content row end -->
+      </div><!-- Content row end -->
 
-  </div><!-- Container end -->
-</section><!-- Main container end -->
+    </div><!-- Container end -->
+  </section><!-- Main container end -->
 
   <footer id="footer" class="footer bg-overlay">
     <div class="footer-main">
@@ -280,9 +330,11 @@
         <div class="row justify-content-between">
           <div class="col-lg-4 col-md-6 footer-widget footer-about">
             <h3 class="widget-title">About Us</h3>
-            <img loading="lazy" class="footer-logo" src="images/footer-logo.png" alt="HappyHammy">
+            <a href="index.html"><img loading="lazy" class="footer-logo" src="images/footer-logo.png"
+                alt="HappyHammy"></a>
             <p>We are here to provide you with the best tips and resources for hamster care.
-              Our dedicated team is here to guide and support you in every step of your journey with these adorable furry friends.</p>
+              Our dedicated team is here to guide and support you in every step of your journey with these adorable
+              furry friends.</p>
             <div class="footer-social">
               <ul>
                 <li><a href="https://facebook.com/themefisher" aria-label="Facebook"><i
@@ -314,9 +366,11 @@
         <div class="row align-items-center">
           <div class="col-md-4">
             <div class="copyright-info">
-              <span>Copyright &copy; <script>
+              <span>Copyright &copy;
+                <script>
                   document.write(new Date().getFullYear())
-                </script>, Designed &amp; Developed by <a href="https://themefisher.com">Themefisher</a></span>
+                </script>, Designed &amp; Developed by <a href="https://themefisher.com">Themefisher</a>
+              </span>
             </div>
           </div>
 
@@ -369,6 +423,6 @@
   <script src="js/script.js"></script>
 
   </div><!-- Body inner end -->
-  </body>
+</body>
 
-  </html>
+</html>

@@ -73,10 +73,46 @@ jQuery(function ($) {
 			}
 		}
 		scrollTopBtn();
+
+		$(window).scroll(function () {
+			if ($(this).scrollTop() + $(this).height() >= $(document).height()) {
+				$('#back-to-bottom').fadeOut();
+			} else {
+				$('#back-to-bottom').fadeIn();
+			}
+		});
+
+
+		//scroll to top btn show/hide
+		function scrollBottomBtn() {
+			var scrollToBottom = $('#back-to-bottom'),
+				scroll = $(window).scrollTop()
+			if ($(this).scrollTop() + $(this).height() >= $(document).height()) {
+				scrollToBottom.fadeOut();
+			} else {
+				scrollToBottom.fadeIn();
+			}
+		}
+		scrollBottomBtn();
 	});
 
 
 	$(document).ready(function () {
+
+		$('#back-to-bottom').fadeIn();
+
+		$("#helpButton").on("click", function(event) {
+			event.preventDefault(); // Evită navigarea către altă pagină
+	  
+			// Afișează overlay și conținutul popup-ului
+			$(".overlay, .popup").fadeIn();
+		  });
+	  
+		  // Eveniment pentru închiderea casetei pop-up la click pe butonul de închidere
+		  $(".close").on("click", function() {
+			$(".overlay, .popup").fadeOut();
+		  });
+
 
 		// navSearch show/hide
 		function navSearch() {
@@ -121,6 +157,20 @@ jQuery(function ($) {
 			});
 		}
 		backToTop();
+
+		function backToBottom() {
+			$('#back-to-bottom').on('click', function () {
+				// Animate scrolling to the bottom of the page
+				$('body,html').animate({
+					scrollTop: $(document).height()
+				}, 800);
+
+				return false; // Prevent default behavior of the anchor link
+			});
+		}
+
+		// Call the function to activate the behavior
+		backToBottom();
 
 
 		// banner-carousel
@@ -223,26 +273,26 @@ jQuery(function ($) {
 				prevArrow: '<button type="button" class="carousel-control left" aria-label="carousel-control"><i class="fas fa-chevron-left"></i></button>',
 				nextArrow: '<button type="button" class="carousel-control right" aria-label="carousel-control"><i class="fas fa-chevron-right"></i></button>',
 				responsive: [{
-						breakpoint: 992,
-						settings: {
-							slidesToShow: 3,
-							slidesToScroll: 3
-						}
-					},
-					{
-						breakpoint: 768,
-						settings: {
-							slidesToShow: 2,
-							slidesToScroll: 2
-						}
-					},
-					{
-						breakpoint: 481,
-						settings: {
-							slidesToShow: 1,
-							slidesToScroll: 1
-						}
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 3
 					}
+				},
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 481,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
 				]
 			});
 		}
@@ -267,7 +317,7 @@ jQuery(function ($) {
 		function toggleMode() {
 			// Check if the 'dark-mode' class is already present
 			var isDarkMode = $('body').hasClass('dark-mode');
-		
+
 			// Toggle between light and dark modes
 			if (isDarkMode) {
 				$('body').removeClass('dark-mode');
@@ -375,8 +425,65 @@ jQuery(function ($) {
 				localStorage.setItem('mode', 'dark');
 				// Add more lines if you have other elements to toggle
 			}
+
+			var isDarkMode9 = $('.quote-item .quote-text').hasClass('dark-mode');
+			if (isDarkMode9) {
+				$('.quote-item .quote-text').removeClass('dark-mode');
+				localStorage.setItem('mode', 'light');
+				// Add more lines if you have other elements to toggle
+			} else {
+				$('.quote-item .quote-text').addClass('dark-mode');
+				localStorage.setItem('mode', 'dark');
+				// Add more lines if you have other elements to toggle
+			}
+
+			// function openPopup() {
+			// 	document.getElementById('overlay').style.display = 'flex';
+			// 	document.getElementById('popup').style.display = 'block';
+			// }
+
+			// // Funcție pentru închiderea casetei pop-up
+			// function closePopup() {
+			// 	document.getElementById('overlay').style.display = 'none';
+			// 	document.getElementById('popup').style.display = 'none';
+			// }
+
+
+			// // Eveniment pentru deschiderea casetei pop-up la click pe link
+			// document.getElementById('helpButton').addEventListener('click', function (event) {
+			// 	event.preventDefault(); // Evită navigarea către altă pagină
+			// 	openPopup();
+			// });
+
+			// // Eveniment pentru închiderea casetei pop-up la click pe butonul de închidere
+			// document.getElementById('closeButton').addEventListener('click', function () {
+			// 	closePopup();
+			// });
 		}
-		
+
+		// Adaugă un eveniment pentru click pe buton
+		// $('#back-to-bottom').on('click', function() {
+		// 	// Derulează către partea de jos a paginii
+		// 	$('html, body').animate({ scrollTop: $(document).height() }, 'slow');
+		//   });
+
+		// Afișează sau ascunde butonul în funcție de poziția paginii
+		//   $(window).scroll(function() {
+		// 	if ($(this).scrollBottom() < 1000) {
+		// 	  $('#back-to-bottom').fadeOut();
+		// 	} else {
+		// 	  $('#back-to-bottom').fadeIn();
+		// 	}
+		//   });
+
+		$(window).scroll(function () {
+			if ($(this).scrollTop() + $(this).height() >= $(document).height()) {
+				$('#back-to-bottom').fadeOut();
+			} else {
+				$('#back-to-bottom').fadeIn();
+			}
+		});
+
 
 	});
 
