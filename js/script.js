@@ -436,45 +436,7 @@ jQuery(function ($) {
 				localStorage.setItem('mode', 'dark');
 				// Add more lines if you have other elements to toggle
 			}
-
-			// function openPopup() {
-			// 	document.getElementById('overlay').style.display = 'flex';
-			// 	document.getElementById('popup').style.display = 'block';
-			// }
-
-			// // Funcție pentru închiderea casetei pop-up
-			// function closePopup() {
-			// 	document.getElementById('overlay').style.display = 'none';
-			// 	document.getElementById('popup').style.display = 'none';
-			// }
-
-
-			// // Eveniment pentru deschiderea casetei pop-up la click pe link
-			// document.getElementById('helpButton').addEventListener('click', function (event) {
-			// 	event.preventDefault(); // Evită navigarea către altă pagină
-			// 	openPopup();
-			// });
-
-			// // Eveniment pentru închiderea casetei pop-up la click pe butonul de închidere
-			// document.getElementById('closeButton').addEventListener('click', function () {
-			// 	closePopup();
-			// });
 		}
-
-		// Adaugă un eveniment pentru click pe buton
-		// $('#back-to-bottom').on('click', function() {
-		// 	// Derulează către partea de jos a paginii
-		// 	$('html, body').animate({ scrollTop: $(document).height() }, 'slow');
-		//   });
-
-		// Afișează sau ascunde butonul în funcție de poziția paginii
-		//   $(window).scroll(function() {
-		// 	if ($(this).scrollBottom() < 1000) {
-		// 	  $('#back-to-bottom').fadeOut();
-		// 	} else {
-		// 	  $('#back-to-bottom').fadeIn();
-		// 	}
-		//   });
 
 		$(window).scroll(function () {
 			if ($(this).scrollTop() + $(this).height() >= $(document).height()) {
